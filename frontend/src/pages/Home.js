@@ -1,5 +1,5 @@
-import React from 'react';
-import SearchBar from '../components/Searchbar/Searchbar';
+import React from "react";
+import SearchBar from "../components/Searchbar/Searchbar";
 
 const Home = () => {
   return (
@@ -10,13 +10,16 @@ const Home = () => {
         </h1>
         <div className="max-w-2xl">
           <p className="text-text text-base text-center lg:text-lg break-words">
-            Welcome to Darija Dictionary, your go-to resource for understanding and learning Moroccan Arabic. Whether you're a language enthusiast, a traveler, or someone interested in Moroccan culture, you'll find a wealth of information here.
+            Welcome to Darija Dictionary, your go-to resource for understanding
+            and learning Moroccan Arabic. Whether you're a language enthusiast,
+            a traveler, or someone interested in Moroccan culture, you'll find a
+            wealth of information here.
           </p>
         </div>
         <SearchBar />
       </div>
     </div>
   );
-}
+};
 
 export default Home;

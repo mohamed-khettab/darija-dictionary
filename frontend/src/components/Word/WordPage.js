@@ -42,14 +42,12 @@ const WordPage = () => {
           {wordData.english_word}
         </h2>
 
-        {/* Part of Speech */}
         <div className="bg-gray-100 p-4 rounded-md mb-4">
           <p className="text-lg md:text-xl lg:text-2xl text-text">
             Part of Speech: {wordData.part_of_speech.join(', ')}
           </p>
         </div>
 
-        {/* Translations */}
         <div className="bg-gray-100 p-4 rounded-md mb-4">
           <h3 className="mb-2 text-2xl font-heading text-primary">Translations:</h3>
           <div className="translation-list">
@@ -58,7 +56,6 @@ const WordPage = () => {
           </div>
         </div>
 
-        {/* Pronunciations */}
         <div className="bg-gray-100 p-4 rounded-md mb-4">
           <h3 className="mb-2 text-2xl font-heading text-primary">Pronunciations:</h3>
           <div className="pronunciation-list">
@@ -70,7 +67,6 @@ const WordPage = () => {
           </div>
         </div>
 
-        {/* Examples */}
         <div className="bg-gray-100 p-4 rounded-md mb-4">
           <h3 className="mb-2 text-2xl font-heading text-primary">Examples:</h3>
           <div className="example-list">
@@ -80,7 +76,6 @@ const WordPage = () => {
           </div>
         </div>
 
-        {/* Additional Information */}
         <div className="bg-gray-100 p-4 rounded-md mb-4">
           <h3 className="mb-2 text-2xl font-heading text-primary">Additional Information:</h3>
           <p className="text-text">Etymology: {wordData.etymology.join(', ')}</p>

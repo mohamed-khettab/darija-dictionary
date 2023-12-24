@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const WordNotFound = () => {
   return (
@@ -7,7 +7,8 @@ const WordNotFound = () => {
         Word Not Found :(
       </h2>
       <p className="text-lg md:text-xl lg:text-2xl text-center">
-        Sorry, the requested word was not found in the dictionary. Please check the spelling or try another word.
+        Sorry, the requested word was not found in the dictionary. Please check
+        the spelling or try another word.
       </p>
     </div>
   );
