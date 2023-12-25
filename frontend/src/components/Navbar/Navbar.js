@@ -6,8 +6,8 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/pronunciation", label: "Pronounciation" },
     { href: "/about", label: "About" },
+    { href: "/pronunciation", label: "Pronounciation" },
     { href: "/contact", label: "Contact Us" },
   ];
 
