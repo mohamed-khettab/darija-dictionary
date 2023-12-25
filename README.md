@@ -2,7 +2,7 @@
 
 Welcome to the Darija Dictionary, a simple project to help you understand Moroccan Arabic (Darija) easily. This dictionary connects English and Darija, making it easier for you to learn common phrases.
 
-Visit the site: https://darija-dictionary.vercel.app/
+Visit the site: [Darija Dictionary](https://darija-dictionary.vercel.app/)
 
 ## Work In Progress
 
