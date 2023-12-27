@@ -15,11 +15,6 @@ const SearchBar = () => {
     setInputValue(e.target.value);
   };
 
-  const handleClear = () => {
-    setInputValue("");
-    inputRef.current.focus();
-  };
-
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
       e.preventDefault();
@@ -28,27 +23,16 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="relative my-4 sm:my-6 md:my-8 lg:my-10">
-      <div className="relative">
-        <input
-          type="text"
-          value={inputValue}
-          onChange={handleChange}
-          onKeyDown={handleKeyDown}
-          placeholder="Type to search..."
-          className="bg-background text-muted text-left border border-border py-2 px-4 sm:px-8 lg:px-16 rounded-md shadow-card focus:outline-none focus:ring focus:border-primary focus:shadow-xl transition-all duration-100"
-          ref={inputRef}
-        />
-        {inputValue && (
-          <button
-            className="absolute top-2 right-4 text-primary cursor-pointer hover:text-accent"
-            onClick={handleClear}
-            aria-label="Clear search input"
-          >
-            Clear
-          </button>
-        )}
-      </div>
+    <div className="my-4 sm:my-6 md:my-8 lg:my-10">
+      <input
+        type="text"
+        value={inputValue}
+        onChange={handleChange}
+        onKeyDown={handleKeyDown}
+        placeholder="Type to search..."
+        className="bg-white text-gray-900 border border-gray-200 py-2 px-4 sm:px-8 lg:px-16 rounded-md shadow-card focus:outline-none focus:ring focus:ring-blue-700 focus:border-blue-700 focus:shadow-xl transition-all duration-100"
+        ref={inputRef}
+      />
     </div>
   );
 };

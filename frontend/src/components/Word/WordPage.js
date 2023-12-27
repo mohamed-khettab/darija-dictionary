@@ -12,7 +12,7 @@ const WordPage = () => {
 
   useEffect(() => {
     console.log('Fetching data for word:', englishWord);
-  
+
     fetchWord(englishWord, setWordData)
       .then((data) => {
         console.log('Data fetched successfully:', data);
@@ -20,7 +20,7 @@ const WordPage = () => {
       .catch((error) => {
         console.error('Error fetching word data:', error);
         if (error.response && error.response.status === 404) {
-          navigate('/word-not-found');
+          navigate('/not-found');
         } else {
           setError(error.message);
         }
@@ -36,54 +36,52 @@ const WordPage = () => {
   }
 
   return (
-    <div className="flex flex-col items-center min-h-screen bg-background p-4 sm:p-6 md:p-8 lg:p-12">
-      <div className="w-full max-w-screen-md bg-white p-6 rounded-lg shadow-card transition duration-300 hover:shadow-xl">
-        <h2 className="text-primary text-4xl lg:text-6xl font-heading mb-4">
-          {wordData.english_word}
-        </h2>
+    <div className="flex items-center justify-center min-h-screen p-8">
+      <div className="w-full max-w-screen-md bg-white p-6 rounded-lg border border-gray-300 transition duration-300">
+        <h2 className="text-4xl lg:text-6xl font-semibold mb-4">{wordData.english_word}</h2>
 
-        <div className="bg-gray-100 p-4 rounded-md mb-4">
-          <p className="text-lg md:text-xl lg:text-2xl text-text">
+        <div className="bg-neutral-100 p-4 lg:p-10 rounded-md mb-4">
+          <p className="text-lg md:text-xl lg:text-2xl">
             Part of Speech: {wordData.part_of_speech.join(', ')}
           </p>
         </div>
 
-        <div className="bg-gray-100 p-4 rounded-md mb-4">
-          <h3 className="mb-2 text-2xl font-heading text-primary">Translations:</h3>
+        <div className="bg-neutral-100 p-4 lg:p-10 rounded-md mb-4">
+          <h3 className="mb-2 text-2xl font-semibold">Translations:</h3>
           <div className="translation-list">
-            <p className="text-text">Arabic: {wordData.translations.arabic.join(', ')}</p>
-            <p className="text-text">Darija: {wordData.translations.darija.join(', ')}</p>
+            <p>Arabic: {wordData.translations.arabic.join(', ')}</p>
+            <p>Darija: {wordData.translations.darija.join(', ')}</p>
           </div>
         </div>
 
-        <div className="bg-gray-100 p-4 rounded-md mb-4">
-          <h3 className="mb-2 text-2xl font-heading text-primary">Pronunciations:</h3>
+        <div className="bg-neutral-100 p-4 lg:p-10 rounded-md mb-4">
+          <h3 className="mb-2 text-2xl font-semibold">Pronunciations:</h3>
           <div className="pronunciation-list">
             {wordData.pronunciations.map((pronunciation) => (
-              <p key={pronunciation._id} className="text-text">
+              <p key={pronunciation._id}>
                 <span className="font-medium">{pronunciation.notation}:</span> {pronunciation.pronunciation}
               </p>
             ))}
           </div>
         </div>
 
-        <div className="bg-gray-100 p-4 rounded-md mb-4">
-          <h3 className="mb-2 text-2xl font-heading text-primary">Examples:</h3>
+        <div className="bg-neutral-100 p-4 lg:p-10 rounded-md mb-4">
+          <h3 className="mb-2 text-2xl font-semibold">Examples:</h3>
           <div className="example-list">
             {wordData.examples.map((example, index) => (
-              <p key={index} className="text-text">{example}</p>
+              <p key={index}>{example}</p>
             ))}
           </div>
         </div>
 
-        <div className="bg-gray-100 p-4 rounded-md mb-4">
-          <h3 className="mb-2 text-2xl font-heading text-primary">Additional Information:</h3>
-          <p className="text-text">Etymology: {wordData.etymology.join(', ')}</p>
-          <p className="text-text">Synonyms: {wordData.synonyms.join(', ')}</p>
-          <p className="text-text">Antonyms: {wordData.antonyms.join(', ')}</p>
-          <p className="text-text">Related Words: {wordData.related_words.join(', ')}</p>
-          <p className="text-text">Usage Notes: {wordData.usage_notes.join(', ')}</p>
-          <p className="text-text">Additional Field: {wordData.additional_field}</p>
+        <div className="bg-neutral-100 p-4 lg:p-10 rounded-md mb-4">
+          <h3 className="mb-2 text-2xl font-semibold">Additional Information:</h3>
+          <p>Etymology: {wordData.etymology.join(', ')}</p>
+          <p>Synonyms: {wordData.synonyms.join(', ')}</p>
+          <p>Antonyms: {wordData.antonyms.join(', ')}</p>
+          <p>Related Words: {wordData.related_words.join(', ')}</p>
+          <p>Usage Notes: {wordData.usage_notes.join(', ')}</p>
+          <p>Additional Field: {wordData.additional_field}</p>
         </div>
       </div>
     </div>
