@@ -12,6 +12,6 @@ This is a simple project that's always growing. It might not have everything yet
 
 
 ## TO DO:
-- [] Document API
-- [] Improve UI
-- [] Make API endpoint to allow contributions
+- [ ] Document API
+- [x] Improve UI
+- [ ] Make API endpoint to allow contributions
