@@ -33,7 +33,10 @@ const Navbar = () => {
   const renderHeader = () => (
     <header className="px-4 md:px-8 py-4 md:py-6 bg-white border-b border-gray-300 mb-0">
       <nav className="max-w-screen-xl flex justify-between items-center mx-auto relative">
-        <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse z-50">
+        <a
+          href="/"
+          className="flex items-center space-x-3 rtl:space-x-reverse z-50"
+        >
           <img
             src="https://cdn-icons-png.flaticon.com/512/1704/1704568.png?uid=R132302535&ga=GA1.2.1999323022.1703636222&"
             alt="Tajine Icon"

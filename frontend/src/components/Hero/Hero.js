@@ -1,8 +1,8 @@
-import React from 'react';
-import SearchBar from '../SearchBar/SearchBar';
+import React from "react";
+import SearchBar from "../SearchBar/SearchBar";
 
 const Hero = () => {
-  const imageUrl = process.env.PUBLIC_URL + '/assets/image.jpg';
+  const imageUrl = process.env.PUBLIC_URL + "/assets/image.jpg";
 
   return (
     <div
@@ -15,8 +15,8 @@ const Hero = () => {
         </h1>
         <p className="text-base lg:text-lg break-words">
           Welcome to Darija Dictionary, your go-to resource for understanding
-          and learning Moroccan Arabic. Whether you're a language enthusiast,
-          a traveler, or someone interested in Moroccan culture, you'll find a
+          and learning Moroccan Arabic. Whether you're a language enthusiast, a
+          traveler, or someone interested in Moroccan culture, you'll find a
           wealth of information here.
         </p>
         <SearchBar />

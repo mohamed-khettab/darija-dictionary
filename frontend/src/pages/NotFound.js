@@ -7,7 +7,8 @@ const NotFound = () => {
         Oops! Page Not Found
       </h2>
       <p className="text-lg md:text-xl lg:text-2xl text-center">
-        It seems like you've wandered off the beaten path. The requested page or word was not found.
+        It seems like you've wandered off the beaten path. The requested page or
+        word was not found.
       </p>
     </div>
   );
