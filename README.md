@@ -9,3 +9,9 @@ Visit the site: [Darija Dictionary](https://darija-dictionary.vercel.app/)
 This is a simple project that's always growing. It might not have everything yet. Thanks for your understanding.
 
 *Note: "Darija" is Moroccan Arabic, spoken in Morocco.*
+
+
+## TO DO:
+- [] Document API
+- [] Improve UI
+- [] Make API endpoint to allow contributions
