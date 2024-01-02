@@ -2,6 +2,8 @@
 
 Welcome to the Darija Dictionary, a simple project to help you understand Moroccan Arabic (Darija) easily. This dictionary connects English and Darija, making it easier for you to learn common phrases.
 
+*Note: The only words currently available to search are water and coffee*
+
 Visit the site: [Darija Dictionary](https://darija-dictionary.vercel.app/)
 
 ## Discontinued :(
