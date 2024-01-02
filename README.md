@@ -4,14 +4,8 @@ Welcome to the Darija Dictionary, a simple project to help you understand Morocc
 
 Visit the site: [Darija Dictionary](https://darija-dictionary.vercel.app/)
 
-## Work In Progress
+## Discontinued :(
 
-This is a simple project that's always growing. It might not have everything yet. Thanks for your understanding.
+Unfortunately, as a high school student I do not have the time to finish this project and make the entire database. If you are interested, feel free to clone this repository and do your own thing.
 
 *Note: "Darija" is Moroccan Arabic, spoken in Morocco.*
-
-
-## TO DO:
-- [ ] Document API
-- [x] Improve UI
-- [ ] Make API endpoint to allow contributions
